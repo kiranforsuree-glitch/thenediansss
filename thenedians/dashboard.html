@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Dashboard | The Nedians</title>
+  <meta name="description" content="Your personal student dashboard: saved universities, comparisons, checklist progress and consultation history.">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="page-header plain">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Home</a><i class="fa-solid fa-chevron-right"></i><span>Student Dashboard</span></div>
+      <h1 id="dashTitle">Student Dashboard</h1>
+      <p id="dashSub">Track your saved universities, comparisons, checklist and bookings — all in one place.</p>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container" id="dashRoot"></div>
+  </section>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/pages.js"></script>
+  <script>renderDashboard();</script>
+</body>
+</html>

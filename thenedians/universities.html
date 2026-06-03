@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Italian Universities Database — Search & Filter | The Nedians</title>
+  <meta name="description" content="Search and filter top Italian universities by city, program level, tuition, language and ranking. Live application deadline countdowns and full details.">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="page-header plain">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Home</a><i class="fa-solid fa-chevron-right"></i><span>Universities</span></div>
+      <h1>Explore Italian Universities</h1>
+      <p>Browse our partner institutions. Filter by city, level, tuition, language and ranking to find your perfect match.</p>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <div class="filter-bar glass">
+        <div class="search-field">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" id="uSearch" placeholder="Search universities or cities..." aria-label="Search universities">
+        </div>
+        <select class="filter-select" id="fCity" aria-label="Filter by city"><option value="">All Cities</option></select>
+        <select class="filter-select" id="fLevel" aria-label="Filter by level"><option value="">All Levels</option></select>
+        <select class="filter-select" id="fLang" aria-label="Filter by language"><option value="">All Languages</option></select>
+        <select class="filter-select" id="fTuition" aria-label="Filter by tuition"><option value="">Any Tuition</option><option value="2000">Under €2,000</option><option value="4000">Under €4,000</option><option value="20000">Any Budget</option></select>
+        <select class="filter-select" id="fSort" aria-label="Sort"><option value="rank">Sort: Ranking</option><option value="tuition">Sort: Tuition (low)</option><option value="name">Sort: Name (A–Z)</option></select>
+      </div>
+      <div class="result-count" id="uCount"></div>
+      <div class="grid uni-grid" id="uGrid"></div>
+      <div id="uEmpty" class="text-center hidden" style="padding:60px 0">
+        <i class="fa-solid fa-magnifying-glass" style="font-size:2.5rem;color:var(--gold);margin-bottom:16px"></i>
+        <h3>No universities match your filters</h3>
+        <p>Try adjusting or clearing your search.</p>
+        <button class="btn btn-ghost mt-2" id="uClear">Clear Filters</button>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/pages.js"></script>
+  <script>renderUniversities();</script>
+</body>
+</html>

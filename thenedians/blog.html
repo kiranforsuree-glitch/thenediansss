@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog & Guides — Study in Italy Tips | The Nedians</title>
+  <meta name="description" content="Expert guides on admissions, visas, scholarships and student life in Italy. Read the latest tips from The Nedians counsellors.">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="page-header plain">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Home</a><i class="fa-solid fa-chevron-right"></i><span>Blog & Guides</span></div>
+      <h1>Blog & Guides</h1>
+      <p>Practical, honest advice on every part of your journey to studying in Italy.</p>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <div class="filter-bar glass">
+        <div class="search-field"><i class="fa-solid fa-magnifying-glass"></i><input type="text" id="bSearch" placeholder="Search articles..." aria-label="Search articles"></div>
+      </div>
+      <div class="tags mb-3" id="bCats"></div>
+      <div class="result-count" id="bCount"></div>
+      <div class="grid uni-grid" id="bGrid"></div>
+      <div id="bEmpty" class="text-center hidden" style="padding:60px 0"><i class="fa-solid fa-newspaper" style="font-size:2.5rem;color:var(--gold)"></i><h3 class="mt-2">No articles found</h3></div>
+    </div>
+  </section>
+
+  <section class="section-sm">
+    <div class="cta-band reveal"><div class="cta-bg"></div><div class="cta-inner">
+      <h2>Never Miss a Guide</h2><p>Join our newsletter for the latest Italy study tips, deadlines and scholarship alerts.</p>
+      <form class="newsletter-mini" data-newsletter style="max-width:420px;margin:0 auto"><input type="email" placeholder="Your email address" aria-label="Email" required><button class="btn btn-primary" type="submit">Subscribe</button></form>
+    </div></div>
+  </section>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/pages.js"></script>
+  <script>renderBlog();</script>
+</body>
+</html>

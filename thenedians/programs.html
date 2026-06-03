@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Study Programs in Italy — Bachelor's, Master's, PhD | The Nedians</title>
+  <meta name="description" content="Browse Bachelor's, Master's, PhD and Foundation programs at top Italian universities. Filter by field, city, language and tuition.">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="page-header plain">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Home</a><i class="fa-solid fa-chevron-right"></i><span>Programs</span></div>
+      <h1>Find Your Program</h1>
+      <p>Explore hundreds of degree programs across our partner universities — filter by level, field, city and language.</p>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <div class="tags mb-3" id="levelTabs" style="justify-content:center"></div>
+      <div class="filter-bar glass">
+        <div class="search-field"><i class="fa-solid fa-magnifying-glass"></i><input type="text" id="pSearch" placeholder="Search programs..." aria-label="Search programs"></div>
+        <select class="filter-select" id="pField" aria-label="Filter by field"><option value="">All Fields</option></select>
+        <select class="filter-select" id="pCity" aria-label="Filter by city"><option value="">All Cities</option></select>
+        <select class="filter-select" id="pLang" aria-label="Filter by language"><option value="">All Languages</option></select>
+      </div>
+      <div class="result-count" id="pCount"></div>
+      <div class="grid feature-grid" id="pGrid"></div>
+      <div id="pEmpty" class="text-center hidden" style="padding:60px 0"><i class="fa-solid fa-graduation-cap" style="font-size:2.5rem;color:var(--gold)"></i><h3 class="mt-2">No programs match your filters</h3><button class="btn btn-ghost mt-2" id="pClear">Clear Filters</button></div>
+    </div>
+  </section>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/pages.js"></script>
+  <script>renderPrograms();</script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scholarships to Study in Italy | The Nedians</title>
+  <meta name="description" content="Discover scholarships for international students in Italy — DiSCo, ER.GO, EDISU, Bocconi merit and the national MAECI grant. Filter by level, nationality and deadline.">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="page-header plain">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Home</a><i class="fa-solid fa-chevron-right"></i><span>Scholarships</span></div>
+      <h1>Scholarships for Italy</h1>
+      <p>Italy offers some of the most generous funding in Europe. Find scholarships that can cover your tuition and living costs.</p>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <div class="filter-bar glass">
+        <div class="search-field"><i class="fa-solid fa-magnifying-glass"></i><input type="text" id="sSearch" placeholder="Search scholarships..." aria-label="Search scholarships"></div>
+        <select class="filter-select" id="sLevel" aria-label="Filter by level"><option value="">All Levels</option></select>
+        <select class="filter-select" id="sNat" aria-label="Filter by nationality"><option value="">All Nationalities</option></select>
+        <select class="filter-select" id="sUni" aria-label="Filter by university"><option value="">All Universities</option></select>
+      </div>
+      <div class="result-count" id="sCount"></div>
+      <div class="grid" style="grid-template-columns:repeat(auto-fill,minmax(360px,1fr));gap:26px" id="sGrid"></div>
+      <div id="sEmpty" class="text-center hidden" style="padding:60px 0"><i class="fa-solid fa-award" style="font-size:2.5rem;color:var(--gold)"></i><h3 class="mt-2">No scholarships match your filters</h3><button class="btn btn-ghost mt-2" id="sClear">Clear Filters</button></div>
+    </div>
+  </section>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/pages.js"></script>
+  <script>renderScholarships();</script>
+</body>
+</html>
